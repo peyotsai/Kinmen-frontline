@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>金門 Kinmen: Isla Mística</title>
+    <style>
+        /* 戰地迷彩綠風格配色 */
+        :root {
+            --military-dark: #1E291C; /* 深軍綠：背景 */
+            --military-olive: #2B3E2A; /* 橄欖綠：區塊 */
+            --military-camo: #556B2F; /* 迷彩綠：標題 */
+            --camo-sand: #D2B48C; /* 迷彩沙/金黃：點綴與連結 */
+            --text-light: #F5F5F0; /* 亮米白：文字 */
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--military-dark);
+            color: var(--text-light);
+        }
+
+        /* 頂部橫幅 */
+
+
+.hero {
+   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(30, 41, 28, 0.4)), url('Gaolian2.jpg') no-repeat center center/cover;
+    /* 調整 padding 讓上下空間拉開，比例就會變好看 */
+    padding: 140px 20px; 
+    text-align: center;
+    border-bottom: 5px solid var(--camo-sand);
+    /* 加上微弱的文字陰影，確保在藍天白雲下字體依然清晰 */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.hero h1 {
+    font-size: 2.8rem; /* 稍微放大標題 */
+    color: #FFF; /* 將主標題改成純白，會非常有質感 */
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 2px; /* 讓字體有些呼吸空間 */
+}
+
+.hero p {
+    font-size: 1.3rem;
+    max-width: 800px;
+    margin: 10px auto;
+    color: var(--camo-sand); /* 副標題用沙色點綴 */
+}
+
+
+
+
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--camo-sand);
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 10px auto;
+        }
+
+        /* 主要內容包裝 */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            color: var(--camo-sand);
+            border-left: 5px solid var(--military-camo);
+            padding-left: 15px;
+            margin-top: 40px;
+            font-size: 1.8rem;
+        }
+
+        /* 歷史與景點欄位排版 */
+       .grid-3, .grid-2 {
+    display: flex;
+    flex-direction: column; /* 讓內容由上往下排 */
+    gap: 30px;             /* 每個項目之間的上下間距 */
+    margin-top: 20px;
+}
+
+
+        .card {
+            background-color: var(--military-olive);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #3A5239;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        .card h3 {
+            color: var(--camo-sand);
+            margin-top: 0;
+        }
+
+        .lang-es {
+            font-style: italic;
+            color: #C0C0C0;
+            border-top: 1px dashed #4A6348;
+            padding-top: 10px;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        /* 底部按鈕區 */
+        .cta-section {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: var(--military-olive);
+            border-radius: 8px;
+            margin-top: 50px;
+            border: 2px solid var(--camo-sand);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--camo-sand);
+            color: var(--military-dark);
+            padding: 15px 40px;
+            text-shadow: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #F5DEB3;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. 頂部橫幅 Hero -->
+    <header class="hero">
+        <h1>時光交織的神秘島嶼：金門</h1>
+        <p>穿越冷戰前線與百年洋樓，探索亞洲最傳奇的隱藏秘境。</p>
+        
+        <h1 style="font-size: 2rem; margin-top: 30px;">Kinmen: La Isla Mística</h1>
+        <p class="lang-es" style="border:none; color:var(--text-light); font-size:1.2rem;">Cruza la última frontera de la Guerra Fría y descubre palacios centenarios en el secreto mejor guardado de Asia.</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- 2. 歷史篇 -->
+        <h2>📜 歷史傳奇 / Historias Legendarias</h2>
+        <div class="grid-3">
+            <div class="card">
+<img src="yanglou.jpg" style="width:100%; height:auto; display:block;">
+                <h3>1. 大航海移民潮</h3>
+                <p>19世紀的金門人遠渡重洋到東南亞打拼，致富後返鄉建造了融合西方殖民與東方傳統的「中西合璧洋樓」。</p>
+                <div class="lang-es">
+                    <strong>La Gran Migración:</strong> Habitantes de Kinmen viajaron a Sudeste Asiático en el siglo XIX. Al prosperar, regresaron para construir hermosas mansiones que fusionan el estilo colonial occidental con el asiático.
+                </div>
+            </div>
+            
+            <div class="card">
+<img src="map1.jpg" style="width:100%; height:auto; display:block;">
+                <h3>2. 冷戰的最前線</h3>
+                <p>1958年8月23日，中共解放軍對金門發動大規模砲擊。僅最初兩小時，數萬發砲彈密集落下，砲火覆蓋軍事陣地、港口、道路與聚落；隨後更以持續砲擊與海上封鎖，企圖切斷補給，使守軍在孤立無援中屈服。</p>
+<p>金門距離中國大陸最近處僅數公里，幾乎就在敵軍砲口之下。島上軍民無法後退，只能一面作戰、一面在砲火中生存。為了保存兵力、維持指揮與作戰能力，他們深入堅硬的花崗岩層，開鑿坑道、地下指揮所、彈藥庫、醫療與補給設施，逐步將整座島嶼打造為一座能在猛烈砲擊下持續作戰的地下要塞。</p>
+  
+                <div class="lang-es">
+                    <strong>La Frontera de la Guerra Fría:</strong>El 23 de agosto de 1958, el Ejército Popular de Liberación de China lanzó un bombardeo masivo contra Kinmen. En solo dos horas, decenas de miles de proyectiles cayeron sobre esta pequeña isla, atacando posiciones militares, puertos, carreteras y zonas habitadas. Los ataques continuaron con el objetivo de cortar los suministros y obligar a los defensores a rendirse.<p> 
+
+<p>A solo unos kilómetros de China continental, Kinmen estaba directamente bajo el fuego enemigo. Sin lugar para retirarse, militares y civiles resistieron y excavaron profundamente en el granito, construyendo túneles, puestos de mando y otras instalaciones militares.<p> 
+
+<p>Así nació una enorme fortaleza subterránea, símbolo de una isla que sobrevivió al fuego y se mantuvo firme en la primera línea de la Guerra Fría.
+                </div>
+            </div>
+
+            <div class="card">
+                <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                    <img src="maestrowu.jpg" alt="Cuchillo de Kinmen" style="width: 50%; height: auto; border-radius: 4px;">
+                    <img src="gangdao.jpg" alt="Aves y Paz" style="width: 50%; height: auto; border-radius: 4px;">
+                </div>
+
+                <h3>3. 從戰火到和平</h3>
+                <p>今天，反坦克鐵絲網旁是成群的候鳥，致命的砲彈被打造享譽國際的「金門鋼刀」。金門已蛻變為和平之島。</p>
+                <div class="lang-es">
+                    <strong>De la Batalla a la Paz:</strong> Hoy la tensión se ha desvanecido. Los búnkeres albergan aves migratorias, y el acero de proyectiles se transforma en famosos cuchillos. ¡Un milagro de paz!
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. 景點篇 -->
+               <!-- 3. 景點篇（戰地風情強化版） -->
+        <h2>📸 必訪戰地奇景 / Atracciones de la Frontera Militar</h2>
+        <div class="grid-2">
+            
+            <!-- 景點 1：翟山坑道 -->
+            <div class="card">
+
+                <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                    <img src="Tunnel.jpg" alt="Cuchillo de Kinmen" style="width: 50%; height: auto; border-radius: 4px;">
+                    <img src="Tunnel3.jpg" alt="Aves y Paz" style="width: 50%; height: auto; border-radius: 4px;">
+                </div>
+
+                <h3>🛶 翟山坑道 (Túnel Zhaishan)</h3>
+                <p>完全在堅硬花崗岩中用雙手與炸藥開鑿出的地下水路。在過去用來隱蔽小艇補給，如今坑道內的光影宛如天然的巨型音樂廳，是震撼人心的地下工程奇蹟。</p>
+                <div class="lang-es">
+                    <strong>Túnel Zhaishan:</strong> Una impresionante vía fluvial subterránea tallada a mano en granito sólido para esconder botes de suministro. Hoy es un escenario militar con una acústica y reflejos mágicos.
+                </div>
+            </div>
+
+             <!-- 景點 2：雙口海灘（超強冷戰地緣對峙） -->
+            <div class="card">
+
+
+
+                <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                    <img src="shwncou2.jpg" alt="Cuchillo de Kinmen" style="width: 50%; height: auto; border-radius: 4px;">
+                    <img src="shwncou3.jpg" alt="Aves y Paz" style="width: 50%; height: auto; border-radius: 4px;">
+                </div>
+
+
+                <h3>🌊 雙口海灘：驚心動魄的兩岸最前線 (Playa Shuangkou: La Frontera Visual)</h3>
+               <p>這裡是金門距離中國大陸最近的海灘之一，僅隔著 6 公里的海域。沙灘上至今仍整齊排列著「軌條砦」（反登陸鐵刺），是用來阻止敵軍戰船上岸的鐵血防線。在這裡，你一抬頭就能無比清晰地看見對岸繁華的摩天大樓，冷戰對峙的震撼感就在眼前！</p>
+                <div class="lang-es">
+                    <strong>Playa Shuangkou:</strong> Una de las costas más cercanas a China continental, a solo 6 km de distancia. La arena aún conserva las hileras de "Estacas Antitanque" de acero, diseñadas para evitar invasiones. Aquí vivirás un choque visual impactante: tocar las armas del pasado mientras contemplas los modernos rascacielos del otro lado.
+                </div>
+            </div>
+
+            <!-- 景點 3：北山播音牆 -->
+            <div class="card">
+
+    <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                    <img src="Beishan.jpg" alt="Cuchillo de Kinmen" style="width: 50%; height: auto; border-radius: 4px;">
+                    <img src="Beishan2.jpg" alt="Aves y Paz" style="width: 50%; height: auto; border-radius: 4px;">
+                </div>
+
+
+                <h3>🔊 北山播音牆 (Muro de Altavoces de Beishan)</h3>
+               <p>正面對著中國大陸、高達三層樓的巨大的石牆。牆面上整齊排列著 48 個巨型喇叭，這是冷戰時期用來對敵軍進行「心理戰補給」與喊話的巨型聲音武器，聲音可遠傳 25 公里！</p>
+                <div class="lang-es">
+                    <strong>Muro de Altavoces de Beishan:</strong> Un enorme muro de concreto de 3 pisos con 48 megáfonos gigantes. Durante la Guerra Fría, se usaba como arma de guerra psicológica para transmitir propaganda que se escuchaba a 25 km de distancia.
+                </div>
+            </div>
+
+            <!-- 景點 4：得月樓與水頭聚落 -->
+            <div class="card">
+
+ <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                    <img src="Deyulao.jpg" alt="Cuchillo de Kinmen" style="width: 50%; height: auto; border-radius: 4px;">
+                    <img src="Deyulao2.jpg" alt="Aves y Paz" style="width: 50%; height: auto; border-radius: 4px;">
+                </div>
+
+                <h3>🏰 得月樓：防禦海盜的洋樓堡壘 (Torre Deyue: El Fortín Oculto)</h3>
+                <p>雖然它是一棟漂亮的洋樓，但它本質上也是一座「戰鬥建築」！建於公元1931年，是當時水頭聚落最高的建築，當時富商為了對抗強盜海盜，將高聳的得月樓蓋滿了槍眼、機關與假門偽裝，是中西混血的精美防禦碉堡。</p>
+                <div class="lang-es">
+                    <strong>Torre Deyue:</strong> Aunque parece una elegante mansión occidental, en realidad también era ¡una construcción para el combate!
+
+Construida en 1931, la Torre Deyue era el edificio más alto de la aldea de Shuitou. Para protegerse de bandidos y piratas, sus propietarios incorporaron troneras para disparar, mecanismos defensivos y puertas falsas para engañar a los atacantes.
+
+Detrás de su hermosa arquitectura de estilo chino y occidental se esconde, en realidad, una sofisticada fortaleza defensiva.
+                </div>
+            </div>
+            
+        </div>
+
+
+       
+
+</body>
+</html>
+
+        <!-- 4. 美食與特產篇 -->
+        <h2>🍶 戰地風味與高粱酒 / Sabores de Guerra y Licor de Sorgo</h2>
+        <div class="grid-2">
+            
+            <div class="card">
+                <h3>💎 金門高粱酒 (Kinmen Kaoliang-El sabor de la isla)</h3>
+
+                <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+                    <img src="Gaolian 6.jpg" alt="Cuchillo de Kinmen" style="width: 50%; height: auto; border-radius: 4px;">
+                    <img src="Gaolian 5.jpg" alt="Aves y Paz" style="width: 50%; height: auto; border-radius: 4px;">
+                </div>
+
+
+
+                 <strong>喝一口金門高粱，也是在品嚐這座戰地島嶼的歷史。</strong>
+
+<p>以金門高粱、小麥與當地水源釀製，金門高粱酒以清澈酒體、濃郁穀香與強勁口感聞名，其中經典酒款酒精濃度高達 58%。從昔日前線軍人的生活記憶，到今天代表金門的名產，高粱酒早已成為這座島嶼最具辨識度的味道之一。</p>
+
+<p>來到金門，別只在餐桌上喝高粱。走進金門酒廠，可以認識從製麴、發酵、蒸餾到窖藏的釀酒工藝，感受高粱如何從一粒穀物變成金門最著名的烈酒。參觀後還可以挑選酒廠限定或金門限定酒款——有些酒，離開這座島就不容易買到。</p>
+
+<p>把一瓶高粱帶回家，就像帶走一小瓶金門的風土與戰地記憶。</p>
+                <div class="lang-es">
+                    <strong>Probar el Kaoliang es también probar una parte de la historia de Kinmen.</strong>
+
+<p>Elaborado con sorgo, trigo y agua local, el Kaoliang de Kinmen es famoso por su intenso aroma y su carácter fuerte. Su versión clásica alcanza 58% de alcohol. De ser parte de la vida cotidiana de los soldados en esta antigua isla de primera línea, se convirtió en uno de los productos más representativos de Kinmen.</p>
+
+<p>Durante la visita a la Destilería de Kinmen, podrá conocer su proceso de fermentación, destilación y añejamiento, y descubrir cómo el sorgo se transforma en el licor más famoso de la isla.</p>
+
+<p>Y antes de salir, no olvide buscar las ediciones exclusivas de la destilería o de Kinmen: algunas botellas especiales solo se consiguen aquí.</p>
+
+<p>Una botella de Kaoliang es también una pequeña parte de Kinmen para llevar a casa.</p>
+
+<p class="lang-es" style="border:none; padding:0; margin-top:5px;"><a href="https://kws.com.tw" target="_blank" style="color: var(--camo-sand); font-weight: bold; text-decoration: underline;">👉 Visita el sitio web oficial de la Destilería de Kinmen</a></p>
+
+
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>🍜 金門必吃：從戰地料理到海島滋味 (abores de Kinmen: de la cocina militar a los sabores del mar)</h3>
+
+
+<div style="display: flex; gap: 10px; margin: 15px 0; flex-wrap: wrap;">
+    <img src="Conge.jpg" alt="Foto 1" style="flex: 1; min-width: 150px; max-height: 200px; object-fit: cover; border-radius: 6px;">
+    <img src="ostras1.jpg" alt="Foto 2" style="flex: 1; min-width: 150px; max-height: 200px; object-fit: cover; border-radius: 6px;">
+    <img src="noodle.jpg" alt="Foto 3" style="flex: 1; min-width: 150px; max-height: 200px; object-fit: cover; border-radius: 6px;">
+
+</div>
+
+                <p>🥣 廣東粥｜看不見米粒的金門早餐
+金門最經典的早餐之一，將白米長時間熬煮至幾乎完全化開，再加入肉丸、豬肝、魚片等豐富配料，搭配油條。看似清淡，入口卻鮮香濃郁，是許多金門人從小吃到大的家鄉味。</p>
+
+<p>🦪 石蚵麵線｜潮間帶裡的百年滋味
+金門沿岸傳統石蚵體型雖小，滋味卻格外鮮甜。新鮮石蚵搭配手工麵線，看似樸實的一碗，濃縮了金門潮間帶、漁村與海島生活的味道。</p>
+
+<p>🍜 炒泡麵｜從軍營走出的戰地料理
+昔日大量官兵駐守金門，簡單的泡麵被加入肉絲、蔬菜與雞蛋大火快炒，成為方便又飽足的軍中料理。如今，這道從戰地生活誕生的平民美食，已成為遊客來金門必嚐的特色料理。</p>
+                <div class="lang-es">
+                    <p>🥣 Congee de Kinmen｜Un desayuno donde el arroz “desaparece”
+Uno de los desayunos más tradicionales de Kinmen. El arroz se cocina lentamente durante horas hasta que los granos casi desaparecen por completo, creando una textura suave y cremosa.
+
+Se sirve con albóndigas de cerdo, hígado, pescado y otros ingredientes, acompañado de youtiao, una tira de masa frita crujiente. Parece un plato sencillo, pero su sabor es intenso y reconfortante.
+
+Para muchos habitantes de Kinmen, es el sabor de casa y de los desayunos de toda la vida.</p>
+
+<p>🦪 Fideos con ostras de roca｜El sabor del mar de Kinmen
+Las pequeñas ostras cultivadas tradicionalmente en las costas de Kinmen destacan por su sabor fresco e intenso. Servidas con finos fideos artesanales, representan la estrecha relación entre la isla, sus comunidades costeras y el mar.</p>
+
+<p>🍜 Fideos instantáneos salteados｜Un plato nacido de la vida militar
+Durante los años en que miles de soldados estaban destinados en Kinmen, los fideos instantáneos comenzaron a saltearse con carne, verduras y huevo para preparar una comida rápida y abundante. Hoy, este sencillo plato nacido de la vida militar se ha convertido en uno de los sabores más característicos de la isla.</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- 5. 簡單旅行指南 -->
+        <h2>✈️ 旅行指南：如何從臺北去金門 / Guía de Viaje: De Taipéi a Kinmen</h2>
+        <div class="card" style="border-left: 5px solid var(--camo-sand);">
+            <h3>📍 直飛只需 1 小時 / Vuelo Directo de Solo 1 Hora</h3>
+            <p>前往金門非常簡單！你只需要從臺北市區的<strong>臺北松山機場 (TSA)</strong> 搭乘國內線航班，直飛<strong>金門機場 (KNH)</strong>，航程大約只需 1 小時。</p>
+            <p>主要營運的航空公司有<strong>立榮航空 (UNI Air)</strong> 與<strong>華信航空 (Mandarin Airlines)</strong>，每天都有密集班次。建議外國旅客攜帶護照直接在機場或上網訂票。</p>
+            
+            <div class="lang-es">
+                <strong>¿Cómo llegar desde Taipéi?</strong><br>
+                ¡Es súper fácil! Solo debes tomar un vuelo nacional desde el <strong>Aeropuerto de Taipéi Songshan (TSA)</strong>, ubicado dentro de la ciudad, hacia el <strong>Aeropuerto de Kinmen (KNH)</strong>. El vuelo toma solo 1 hora.<br><br>
+                Las aerolíneas principales son <strong>UNI Air</strong> y <strong>Mandarin Airlines</strong>, con múltiples vuelos diarios. Como viajero extranjero, solo necesitas tu pasaporte para abordar.
+
+
+<p class="lang-es" style="border:none; padding:0; margin-top:5px;"><a href="https://www.uniair.com.tw/rwd/index.aspx" target="_blank" style="color: var(--camo-sand); font-weight: bold; text-decoration: underline;">👉 Visita el sitio web oficial de UNI Air</a></p>
+
+<p class="lang-es" style="border:none; padding:0; margin-top:5px;"><a href="https://www.mandarin-airlines.com/" target="_blank" style="color: var(--camo-sand); font-weight: bold; text-decoration: underline;">👉 Visita el sitio web oficial de Mandarin Airlines</a></p>
+            </div>
+        </div>
+
+        <!-- 6. 行動呼籲 CTA -->
+        <div class="cta-section">
+            <h3>準備好親自見證這個奇蹟了嗎？</h3>
+            <p>從台灣直飛金門​​非常方便，您可以輕鬆將其添加到您的行程中。冷戰歷史遺跡、地下堡壘、傳統村莊、當地美食以及著名的高梁：這座小島擁有豐富的旅遊資源。</p>
+
+<p>將金門列入您的下一次台灣之旅吧！</p>
+
+<p>點擊下方鏈接，了解更多金門英文資訊。</p>
+            <p class="lang-es" style="border:none; color: #C0C0C0;">
+
+<p>¿Listo para descubrir Kinmen en persona?</p>
+
+<p>Con vuelos directos desde Taiwán, Kinmen es muy fácil de incluir en tu viaje. Historia de la Guerra Fría, fortalezas subterráneas, pueblos tradicionales, gastronomía local y el famoso Kaoliang: una pequeña isla con mucho por descubrir.</p>
+
+<p>¡Incluye Kinmen en tu próxima aventura por Taiwán!</p>
+
+<p>Haz clic en el enlace de abajo para descubrir más información sobre Kinmen en inglés.</p>
+            <a href="https://www.foreignersintaiwan.com/blog/ultimate-guide-to-kinmen" target="_blank" class="btn">金門旅遊資訊 / Más información sobre Kinmen</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
